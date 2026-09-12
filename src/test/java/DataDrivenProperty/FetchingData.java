@@ -44,6 +44,10 @@ public class FetchingData {
 		
 		String all = pro.toString();
 		System.out.println(all);
+
+		for (String key : pro.stringPropertyNames()) {
+           System.out.println(key + " = " + pro.getProperty(key));
+		}
 		
 		FI.close();
 	}
