@@ -46,7 +46,10 @@ public class FetchingData {
 		System.out.println(all);
 
 		for (String key : pro.stringPropertyNames()) {
-           System.out.println(key + " = " + pro.getProperty(key));
+            String value = pro.getProperty(key);
+
+            System.out.println("Key = " + key);
+            System.out.println("Value = " + value);
 		}
 		
 		FI.close();
