@@ -148,6 +148,39 @@ public class ExcelUtility {
 		 fInput.close();
 		 fOutput.close();
 		}
-	 
+	 /*public static void getCellAllData(String XLfileName, String XLsheetName) throws Throwable {
+
+    fInput = new FileInputStream(XLfileName);
+
+    XworkBook = new XSSFWorkbook(fInput);
+
+    Xsheet = XworkBook.getSheet(XLsheetName);
+
+    int rowNo = Xsheet.getLastRowNum();
+
+    for (int r = 0; r <= rowNo; r++) {
+
+        Xrow = Xsheet.getRow(r);
+
+        int cellNo = Xrow.getLastCellNum();
+
+        for (int c = 0; c < cellNo; c++) {
+
+            Xcell = Xrow.getCell(c);
+
+            DataFormatter formatter = new DataFormatter();
+
+            String data = formatter.formatCellValue(Xcell);
+
+            System.out.print(data + "\t");
+        }
+
+        System.out.println();
+    }
+
+    XworkBook.close();
+    fInput.close();
+}
+	 */
 
 }
