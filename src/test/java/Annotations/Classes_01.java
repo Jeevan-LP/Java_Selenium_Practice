@@ -10,14 +10,22 @@ public class Classes_01 {
 	void Login() {
 		System.out.println("Login @BeforeClass methods.......");	
 	}
+	
 	@Test(priority = 1)	//priority is optional
 	void Search() {
 		System.out.println("Search methods.......");	
 	}
+	
 	@Test(priority = 2)	//priority is optional
 	void Profile() {
 		System.out.println("Profile methods.......");	
 	}
+	
+	@Test(priority = 2)	//priority is optional
+	void details() {
+		System.out.println("details methods.......");	
+	}
+	
 	@AfterClass
 	void Logout() {
 		System.out.println("Logout @AfterClass methods.......");

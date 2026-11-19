@@ -11,6 +11,36 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class AllAnnotations_01 {
+	
+	/*
+	 	a. @Test annotation will execute all tests
+		b. @BeforeTest annotation will execute once before executing all @Test annotation
+		c. @AfterTest annotation will execute once after executing all @Test annotation
+		d. @BeforeMethod annotation will execute before executing each @Test annotation
+		e. @AfterMethod annotation will execute after executing each @Test annotation
+		f. @BeforeClass annotation will execute once before executing all @Test annotation
+		g. @AfterClass annotation will execute once after executing all @Test annotation
+		h. @BeforeSuite annotation will execute once before executing the entire suite
+		i. @AfterSuite annotation will execute once after executing the entire suite
+
+		@BeforeSuite
+		      ↓
+		   @BeforeTest
+		      		↓
+		   		@BeforeClass
+		      			↓
+		   			@BeforeMethod
+		      			  ↓
+		     			@Test
+		      			  ↓
+		   			@AfterMethod
+		      			↓
+		   		@AfterClass
+		           ↓
+		   @AfterTest
+		      ↓
+		@AfterSuite
+	 */
 
 	@BeforeSuite
 	void BeforeSuite() {

@@ -1,0 +1,7 @@
+a. @Test annotation will execute all tests
+b. @BeforeTest annotation will execute once before executing all @Test annotation
+c. @AfterTest annotation will execute once after executing all @Test annotation
+d. @BeforeMethod annotation will execute before executing each @Test annotation
+e. @AfterMethod annotation will execute after executing each @Test annotation
+f. @BeforeClass annotation will execute once before executing all @Test annotation
+g. @AfterClass annotation will execute once after executing all @Test annotation
